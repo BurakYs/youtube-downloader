@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>YouTube Video Downloader</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="/index.js" type="module"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>YouTube Video Downloader</h1>
+            <p>Download YouTube videos in high quality for free!</p>
+        </div>
+        <div class="form-container">
+            <div class="area">
+                <input type="text" id="video-url" placeholder="Enter YouTube video URL">
+                <div class="options">
+                    <div class="select-container">
+                        <label for="quality">Quality:</label>
+                        <select id="quality" name="quality">
+                            <option value="lowest">Lowest</option>
+                            <option value="Lowest">Highest</option>
+                            <!--<option value="144">144p</option>
+                            <option value="240">240p</option>
+                            <option value="360">360p</option>
+                            <option value="480">480p</option>
+                            <option value="720">720p</option>
+                            <option value="1080">1080p</option>-->
+                        </select>
+                    </div>
+                    <span style="width: 30px;"></span>
+                    <div class="select-container">
+                        <label for="format">Format:</label>
+                        <select id="format" name="format">
+                            <option value="mp4">MP4</option>
+                            <option value="mp3">MP3</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" id="download-btn" title="submit"><i class="fas fa-download"></i> Download</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

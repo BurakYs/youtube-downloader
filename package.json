@@ -1,0 +1,23 @@
+{
+  "name": "youtube-downloader",
+  "version": "1.0.0",
+  "description": "Basic Youtube Video Downloader",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ytdl-core": "^4.11.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BurakYs/youtube-downloader.git"
+  },
+  "author": "BurakYs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BurakYs/youtube-downloader/issues"
+  },
+  "homepage": "https://github.com/BurakYs/youtube-downloader#readme"
+}
