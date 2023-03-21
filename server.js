@@ -23,6 +23,8 @@ app.get('/api/download', async (req, res) => {
     const videoUrl = req.query.url;
     const format = req.query.format;
     let quality = req.query.quality;
+    if (["144", "240", "360", "480"].includes(quality)) quality = "lowest"
+    if (["720", "1080"].includes(quality)) quality = "highest"
     res.setHeader('Content-Disposition', `attachment; filename="video.${format}"`);
     res.setHeader("Content-Type", `video/${format}`);
     ytdl(videoUrl, { format: format, quality: quality, filter: (format === "mp3" ? "audioonly" : "videoandaudio") }).pipe(res);
